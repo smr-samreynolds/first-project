@@ -16,19 +16,18 @@
 </head>
 <body>
     <!------------ Header - Page Navigation ------------>
-    <div class="header-nav grid-spaceAround-middle">
-        <nav>
+    <section class="header-nav grid-middle-spaceBetween padded-05">
+        <h2 class="col-4 logo">
+            <a href="/index.html" class="header-nav" >
+            ReefSearch Community</a>
+        </h2>
+        <nav class="col-8 right">
             <a href="/who-we-are.html" class="col-2">Who we are</a>
             <a href="/what-we-do.html" class="col-2">What we do</a>   
-           </nav>
-           <a href="/index.html" class="col-2">
-               <h2>LOGO</h2>
-           </a>
-           <nav>
-               <a href="/where-we-work.html" class="col-2">Where we work</a>
-               <a href="/contact.html" class="col-2">Contact Us</a>   
+            <a href="/where-we-work.html" class="col-2">Where we work</a>
+            <a href="/contact.html" class="col-2">Contact Us</a>   
         </nav>
-    </div>
+    </section>
         <!------------ Header Banner ------------->
     <section class="bg-image">
         <h1>Want to Know More?</h1>
@@ -69,32 +68,41 @@
           </div>
     </form>
     <!------------ Footer ------------>
-    <footer class="grid">
-        <div class="col-12">
-            <h2>Keep up to date with ReefSearch Community</h2>
+    <footer class="grid bg-dark">
+        <!-- logo and text column -->
+        <div class="col-5_sm-12 padded">
+            <h2 class="logo">ReesSearch Community</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, quos?</p>
         </div>
-        <div class="grid col-8_sm-12">
-            <nav>
-                <a href="#" class="col-1_sm-12">
-                    <i class="fa-brands fa-facebook-square"></i>
-                </a>
-                <a href="#" class="col-1_sm-12">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="#" class="col-1_sm-12">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-                <a href="#" class="col-1_sm-12">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
-                <a href="#" class="col-1_sm-12">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-            </nav>
-        </div> 
-        <div class="col-12">
-            <p>Copyright 2022</p>
-        </div>
+       <div class="col-1"></div>
+       <!-- links and socials column -->
+       <div class="col-6_sm-12-middle padded right">
+           <nav class="inline">
+               <a href="/who-we-are.html">About </a>|
+               <a href="/where-we-work.html">Locations </a>|
+               <a href="/contact.html">Contact</a>
+           </nav>
+           <nav class="inline socials">
+            <a href="#">
+                <i class="fa-brands fa-facebook-square"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+           </nav>
+       </div>
+       <div class="col-12 padded-05 center">
+           <p>Copyright 2022</p>
+       </div>    
     </footer>
 </body>
 </html>

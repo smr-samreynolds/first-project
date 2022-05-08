@@ -1,12 +1,13 @@
 /* Font Family */
 /* Raleway */
+/* Font weight: 200, 400, 600, 800 */
 /* Abril Fatface */
-/* color: #0a0013 */
-/* Ruby: #E40066 */
-/* Davys Grey: #4D5359 */
-/* Steel Teal: #508484 */
-/* Platinum: #E5E6E4 */
-/* Magic Mint: #B8EBD0 */
+/* 
+#192b37
+#08e8de
+#fa3c5a
+#E5E6E4
+ */
 
 
 /* CSS Reset */
@@ -18,8 +19,8 @@
 
 /* Temporary styles */
 * {
-    padding: 0.5rem;
-    border: 2px solid rgb(90, 90, 90);
+    /* padding: 0.5rem; */
+    /* border: 2px solid rgb(90, 90, 90); */
   } 
 
 body { border: none; }
@@ -27,6 +28,11 @@ body { border: none; }
 html { border: none; }
 
 /* Universal Styles and Utility Classes */
+
+/* Universal Styles */
+[class*="col-"] {
+  padding: 0;
+}
 
 /* Padding */
 .padded { padding: 5%;}
@@ -86,6 +92,8 @@ html { border: none; }
 .margin-tb { margin-top: 5%; margin-bottom: 5%; }
 .margin-lr { margin-left: 5%; margin-right: 5%; }
 
+
+.margin-lr-sm { margin-left: 2.5%; margin-right: 2.5%; }
 /* Minimum Height */
 .tall-50  {  min-height: 50vh; }
 .tall-60  {  min-height: 60vh; }
@@ -98,30 +106,173 @@ html { border: none; }
  */
  /* Backgrounds */
  .bg-dark { 
-  background-color: #508484 ; 
+  background-color: #192b37; 
   color: #E5E6E4;
 }
 
-.bg-light { background-color: #E5E6E4); }
-.bg-featured { background-color: #B8EBD0  }
+.bg-light { background-color: #E5E6E4; }
+.bg-featured { background-color: #08e8de;  }
 
 /* Images */
- bg-image {
-  background-image: url("...");
+ .bg-image {
   background-size: cover;
-  min-height: 10rem;
-}
+  background-position: center;
+  background-repeat: no-repeat;
+ }
 
 /* Aspect ratios */
 .portrait-tall  { padding-bottom: 175%;}
 .portrait       { padding-bottom: 125%;}
-.square         { padding-bottom: 100%;}
+.square         { padding-bottom: 19%;}
 .landscape      { padding-bottom: 66%; }
 .landscape-wide { padding-bottom: 56%; }
 
+.grid-square {
+  object-fit: cover;
+  width:230px;
+  height:230px;
+}
 /* Typography Styles */
 
 body {
   font-family: 'Raleway', sans-serif;
-  color: #4D5359;
+  color: #192b37;
  }
+
+.left   {  text-align: left;  }
+.center {  text-align: center;}
+.right  {  text-align: right; }
+
+h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  margin-bottom: 1.2rem;
+}
+
+h2 { font-size: 2.5rem;}
+p {
+  font-weight: 200;
+  letter-spacing: 1.1;
+  line-height: 1.4; 
+  margin-bottom: 1rem;
+}
+
+ p:last-child { margin-bottom: 0;}
+
+ a {
+   text-decoration: none;
+   border-bottom: 1px solid;
+   transition: 0.5s;
+ }
+
+ a:hover {
+   color: #fa3c5a;
+ }
+
+ /* Typography Classes */
+
+ .extra-light { font-weight: 200;}
+ .regular     { font-weight: 400;}
+ .semi-bold   { font-weight: 600;}
+ .extra-bold  { font-weight: 800;}
+
+.light-text { color: #E5E6E4;}
+.featured-text { color: #fa3c5a;  }
+.alternative-text { color: #08e8de;}
+
+.small-text  { font-size: 1.5rem}
+.medium-text { font-size: 2rem  }
+.large-text  { font-size: 4.5rem}
+
+.subtitle { color: #BFAFA6;}
+
+/* Font Awesome Icons */
+
+.icon {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color:inherit;
+}
+
+/* Header and Footer Styles */
+.logo h2 {
+  margin-bottom: 0;
+  color: #fff9ed
+  transition: 0.5s;
+}
+
+.logo h2:hover {
+  color:#fa3c5a;
+}
+
+.header-nav a{
+  padding: 1rem;
+  color: #fff9ed;
+  text-decoration: none;
+  border-bottom: 0;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.header-nav a:hover {
+  color: #fa3c5a; 
+}
+
+header {
+  background-image: url('https://source.unsplash.com/6ArTTluciuA');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 1% 5%;
+}
+
+header h3 {
+  color: #08e8de;
+  font-size: 6.5rem;
+}
+
+header h1 { color: #fff9ed;}
+
+footer a {
+  text-decoration: none;
+  text-align: center;
+  color: #fff9ed;
+  border: none;
+}
+
+.inline a {
+  display:inline-block;
+  padding: 0.5rem;
+}
+
+
+/* Individual Background Images */
+.img-coralReef {
+  background-image: url('https://source.unsplash.com/ocaO7-Y2UBk');
+  background-position: 40% 50%;
+}
+
+.img-beach {
+  background-image: url('https://source.unsplash.com/apax4M-4kFI');
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 65%;
+}
+
+
+
+/* Quote section */
+.quote-icon {
+  font-size: 7rem;
+  display: inline-block;
+  color: #08e8de;
+  line-height: 1;
+}
+
+/* Buttons & Forms */
+
+/* SECTION STYLES */
+
+/* Testimonials Styles */
+
