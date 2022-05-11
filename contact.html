@@ -8,70 +8,93 @@
     <!-- Gridlex -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
     <!-- Google Fonts -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:ital,wght@0,200;0,400;0,600;0,800;1,200;1,400;1,600;1,800&display=swap" rel="stylesheet">
     <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- my style sheet -->
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <!------------ Header - Page Navigation ------------>
-    <section class="header-nav grid-middle-spaceBetween padded-05">
-        <h2 class="col-4 logo">
-            <a href="/index.html" class="header-nav" >
-            ReefSearch Community</a>
-        </h2>
-        <nav class="col-8 right">
-            <a href="/who-we-are.html" class="col-2">Who we are</a>
-            <a href="/what-we-do.html" class="col-2">What we do</a>   
-            <a href="/where-we-work.html" class="col-2">Where we work</a>
-            <a href="/contact.html" class="col-2">Contact Us</a>   
-        </nav>
-    </section>
-        <!------------ Header Banner ------------->
-    <section class="bg-image">
-        <h1>Want to Know More?</h1>
-        <h2>Send us a message below!</h2>
-    </section>
+    <!------------ Header - Banner ------------>
+    <header class="header-nav bg-image img-oceanSurface center grid-top tall-60 padded-sm">
+        <div class="col-12-top grid">
+            <div class="col-4 left">
+                <a href="/index.html" class="logo">
+                    <h2>ReefSearch</h2>
+                </a>
+            </div>
+            <nav class="col-8-middle right light-text">
+                <a href="/who-we-are.html" class="col-2">Who we are</a>
+                <a href="/what-we-do.html" class="col-2">What we do</a>   
+                <a href="/where-we-work.html" class="col-2">Where we work</a>
+                <a href="/contact.html" class="col-2">Contact Us</a>     
+
+            </nav>
+        </div>
+        <div class="col-12">
+            <h3 class="dark-text">Want to <span class="featured-text">know</span> more?</h3>
+            <h1>Community led conservation and stewardship</h1>
+        </div>
+    </header>
     <!------------ Text Section ------------>
-    <section>
-        <h2>Contact Us heading here</h2>
+    <section class="padded center">
+        <h2>We want to hear from you</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur non commodi, facere saepe consequuntur distinctio, exercitationem, sint veritatis dolores tenetur amet nobis culpa id eum possimus ratione vitae. Id beatae aperiam nesciunt sunt distinctio provident quod dolor veniam nemo facilis?
         </p>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam suscipit perferendis ipsam, a aperiam placeat.</p>
     </section>
     <!------------ Contact Form ------------>
-    <form class="grid-spaceAround">
-        <div class="col-6">
-            <label for="_name">Name: </label>
-            <input type="text" name="_name" id="_name" placeholder="Full Name">
+    <section>
+        <div class="grid">
+            <div class="col-5 bg-image img-sunset padded"></div>
+            <form class="col-7 padded bg-dark">
+                <div class="col-6">
+                    <label for="_name">Name: </label>
+                    <input type="text" name="_name" id="_name" placeholder="Full Name">
+                </div>
+                <div class="col-6">
+                    <label for="_replyto">Email: </label>
+                    <input type="email" name="_replyto" id="_replyto" placeholder="Email" />
+                </div>
+                <div class="col-12">
+                    <label for="subject">Subject: </label>  
+                    <input list="subject" placeholder="Select one">
+                    <datalist id="subject">
+                        <option value="Conservation">
+                            <option value="Research"><option value="Outreach and Education">
+                            <option value="Other">
+                    </datalist>
+                </div>
+                <div class="col-12">
+                    <label for="message">Message</label>
+                    <textarea name="message"  id="message" placeholder="Type your message here..."></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="button">SUMBIT</button>
+                </div>
+            </form>
         </div>
-        <div class="col-6">
-            <label for="_replyto">Email: </label>
-            <input type="email" name="_replyto" id="_replyto" placeholder="Email" />
-          </div>
-          <div class="col-12">
-            <label for="subject">Subject: </label>  
-            <input list="subject" placeholder="Select one">
-              <datalist id="subject">
-                  <option value="Conservation">
-                      <option value="Research"><option value="Outreach and Education">
-                      <option value="Other">
-              </datalist>
-          </div>
-          <div class="col-12">
-              <label for="message">Message</label>
-              <textarea name="message"  id="message" placeholder="Type your message here..."></textarea>
-          </div>
-          <div class="col-12">
-            <button type="submit" class="button">SUMBIT</button>
-          </div>
-    </form>
+    </section>
+    <!------------ quote section ------------>
+    <section class="grid-middle center padded bg-image img-beach tall-30">
+        <div class="col-1">
+            <span class="quote-icon right">“</span>
+        </div>
+        <div class="col-10">
+            <p class="medium-text semi-bold">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <p class="small-text">- author</p> <!-- may need to create and add a subtitle class to this and other similar sections -->   
+        </div>
+        <div class="col-1 left">
+            <span class="quote-icon">”</span>
+        </div>
+    </section>
     <!------------ Footer ------------>
     <footer class="grid bg-dark">
         <!-- logo and text column -->
         <div class="col-5_sm-12 padded">
-            <h2 class="logo">ReesSearch Community</h2>
+            <h2 class="logo">ReefSearch Community</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, quos?</p>
         </div>
        <div class="col-1"></div>

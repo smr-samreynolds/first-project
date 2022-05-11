@@ -8,39 +8,44 @@
     <!-- Gridlex -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
     <!-- Google Fonts -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:ital,wght@0,200;0,400;0,600;0,800;1,200;1,400;1,600;1,800&display=swap" rel="stylesheet">
     <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- my style sheet -->
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <!------------ Header - Page Navigation ------------>
-    <section class="header-nav grid-middle-spaceBetween padded-05">
-        <h2 class="col-4 logo">
-            <a href="/index.html" class="header-nav" >
-            ReefSearch Community</a>
-        </h2>
-        <nav class="col-8 right">
-            <a href="/who-we-are.html" class="col-2">Who we are</a>
-            <a href="/what-we-do.html" class="col-2">What we do</a>   
-            <a href="/where-we-work.html" class="col-2">Where we work</a>
-            <a href="/contact.html" class="col-2">Contact Us</a>   
-        </nav>
-    </section>
-    <!------------ Header Banner ------------->
-    <section class="bg-image">
-        <h1>Outreach and Education</h1>
-        <h2>Add a subtitle in here</h2>
-    </section>
+    <!------------ Header - Banner ------------>
+    <header class="header-nav bg-image img-oceanSurface center grid-top tall-60 padded-sm">
+        <div class="col-12-top grid">
+            <div class="col-4 left">
+                <a href="/index.html" class="logo">
+                    <h2>ReefSearch</h2>
+                </a>
+            </div>
+            <nav class="col-8-middle right light-text">
+                <a href="/who-we-are.html" class="col-2">Who we are</a>
+                <a href="/what-we-do.html" class="col-2">What we do</a>   
+                <a href="/where-we-work.html" class="col-2">Where we work</a>
+                <a href="/contact.html" class="col-2">Contact Us</a>     
+
+            </nav>
+        </div>
+        <div class="col-12">
+            <h3 class="dark-text">Outreach  and Education</h3>
+            <h1>Community led conservation and stewardship</h1>
+        </div>
+    </header>
     <!------------ Text Section ------------>
-    <section>
+    <section class="padded center bg-dark">
         <h2>Schools and Local Communities</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus sunt aut excepturi, molestias qui tempora eligendi consequuntur voluptas adipisci modi tenetur mollitia corrupti ut dolorem similique aliquid incidunt. Laudantium blanditiis dolore voluptatum ex consectetur, iusto officia voluptatibus autem nostrum, facilis, molestias aliquid deserunt nesciunt labore fugiat id illo ipsum dolor?</p>
     </section>
     <!------------ Text/video section ------------>
-    <section class="grid">
-        <div class="grid col-6">
+    <section class="grid center ">
+        <div class="col-6 tall-60 light-text grid-middle-spaceAround bg-image img-reef">
             <div class="col-6">
                 <h3>43</h3>
                 <p>schools</p>
@@ -50,44 +55,63 @@
                 <p>community outreach projects</p>
             </div>
         </div>
+        <div class="col-6 left padded">
+            <h2>Education & Outreach</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi excepturi, harum at nihil dolorem consequatur quo laudantium ad consectetur a nesciunt ducimus labore, voluptate architecto laboriosam expedita tempore, iusto aspernatur molestiae dolorum corporis aperiam quidem magni optio. Doloremque ea eius sequi nesciunt ex illo iure sunt omnis veniam unde deserunt eveniet, corporis exercitationem excepturi? Ratione eius eveniet esse quo ullam non, tempore voluptatem provident quaerat quas nam nisi cupiditate atque impedit perspiciatis minima tenetur error!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, in! Sapiente quo cupiditate ex at, eum corrupti obcaecati laborum unde mollitia repellat veritatis explicabo adipisci amet beatae odit ut dolores quidem nulla exercitationem iusto rem.</p>
+        </div>
+    </section>
+    <!------------ quote section ------------>
+    <section class="grid-middle center padded bg-image img-beach tall-50">
+        <div class="col-1">
+            <span class="quote-icon right">“</span>
+        </div>
+        <div class="col-10">
+            <p class="medium-text alternative-text semi-bold">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <p class="small-text">- author</p> <!-- may need to create and add a subtitle class to this and other similar sections -->   
+        </div>
+        <div class="col-1 left">
+            <span class="quote-icon">”</span>
+        </div>
     </section>
     <!------------ Text/Image Grid ------------>
-    <section class="grid">
-        <div class="col-6_sm-12">
-            <!-- image -->
-        </div>
-        <div class="col-6_sm-12">
+    <section class="padded bg-dark">
+        <div class="grid padded flex-flip">
+            <div class="col-5_sm-12 grid-image img-classroom"> 
+            </div>
+            <div class="col-7_sm-12-middle padded">
             <h3>Title Here</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem nostrum voluptates ad obcaecati veritatis voluptatum eveniet aspernatur consectetur accusamus quis quaerat aliquid dolore dicta nemo expedita, commodi incidunt asperiores ab.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur assumenda deleniti aut quam similique esse blanditiis ea accusantium, veniam illum quod? Adipisci sint fugiat suscipit similique alias beatae error commodi.</p>
         </div>
-        <div class="col-6_sm-12">
+        </div>
+        <div class="grid padded flex-flip">
+            <div class="col-7_sm-12-middle padded">
             <h3>Title Here</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem nostrum voluptates ad obcaecati veritatis voluptatum eveniet aspernatur consectetur accusamus quis quaerat aliquid dolore dicta nemo expedita, commodi incidunt asperiores ab.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur assumenda deleniti aut quam similique esse blanditiis ea accusantium, veniam illum quod? Adipisci sint fugiat suscipit similique alias beatae error commodi.</p>
+            </div>
+            <div class="col-5_sm-12 grid-image img-classroom"> 
+            </div>
         </div>
-        <div class="col-6_sm-12">
-            <!-- image -->
-        </div>
+        
     </section>
-    <!-- Mini Projects Section -->
-    <section class="grid-spaceAround-middle">
-        <div class="col-4_sm-12 bg-image">
-            <a href="/research.html">
-                <h3>Conservation</h3>
-            </a>
-        </div>
-        <div class="col-4_sm-12 bg-image">
-            <a href="/education-and-outreach.html">
-                <h3>Research</h3>
-            </a>
-        </div>
+    <!------------ Projects Section ------------>
+    <section class="grid-spaceAround-middle padded projects">
+        <a href="/conservation.html" class="col-3_sm-12 bg-image img-coralNursery square">
+             <h3 class="center">Conservation</h3>
+        </a>
+        <a href="/research.html" class="col-3_sm-12 bg-image img-bleached square">
+            <div>
+                <h3 class="center">Research</h3>
+            </div>
+        </a>
     </section>
-    <!------------ Footer ------------>
+    <!------------ FOOTER ------------>
     <footer class="grid bg-dark">
         <!-- logo and text column -->
         <div class="col-5_sm-12 padded">
-            <h2 class="logo">ReesSearch Community</h2>
+            <h2 class="logo">ReefSearch Community</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, quos?</p>
         </div>
        <div class="col-1"></div>

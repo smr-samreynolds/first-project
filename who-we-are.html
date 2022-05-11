@@ -8,107 +8,118 @@
     <!-- Gridlex -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
     <!-- Google Fonts -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:ital,wght@0,200;0,400;0,600;0,800;1,200;1,400;1,600;1,800&display=swap" rel="stylesheet">
     <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- my style sheet -->
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
      <!------------ Header - Page Navigation ------------>
-     <section class="header-nav grid-middle-spaceBetween padded-05">
-        <h2 class="col-4 logo">
-            <a href="/index.html" class="header-nav" >
-            ReefSearch Community</a>
-        </h2>
-        <nav class="col-8 right">
+     <header class="header-nav bg-image img-oceanSurface grid-top center tall-60 padded-sm">
+        <div class="col-12-top grid">
+          <div class="col-4 left">
+            <a href="/index.html" class=logo>
+              <h2>ReefSearch</h2>
+            </a>
+          </div>
+          <nav class="col-8-middle right light-text">
             <a href="/who-we-are.html" class="col-2">Who we are</a>
             <a href="/what-we-do.html" class="col-2">What we do</a>   
             <a href="/where-we-work.html" class="col-2">Where we work</a>
             <a href="/contact.html" class="col-2">Contact Us</a>   
-        </nav>
-    </section>
-    <!------------ Header Banner ------------->
-    <section class="bg-image">
-        <h1>Who We Are</h1>
-        <h2>Get to know ReefSearch Community</h2>
-    </section>
+          </nav>
+        </div>
+        <div class=col-12>
+          <h3 class="dark-text">Get to <span class="featured-text">know</span> us</h3>
+          <h1>Conservation | Research | Education</h1>
+        </div>
+      </header>
+    
     <!------------ Photo/Text section ------------>
     <!-- Add the css/class to flip these two columns on mobile so the text comes first and then the image -->
     <section class="grid">
-        <div class="col-6_sm-12">
+        <div class="col-6_sm-12 padded">
             <h3>Our Story</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem nostrum voluptates ad obcaecati veritatis voluptatum eveniet aspernatur consectetur accusamus quis quaerat aliquid dolore dicta nemo expedita, commodi incidunt asperiores ab.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur assumenda deleniti aut quam similique esse blanditiis ea accusantium, veniam illum quod? Adipisci sint fugiat suscipit similique alias beatae error commodi.</p>
         </div>
-        <div class="col-6_sm-12">
+        <div class="col-6_sm-12 bg-image img-beachShack tall-60">
             <!-- image -->
         </div>
     </section>
     <section class="grid">
-        <div class="col-6_sm-12">
+        <div class="col-6_sm-12 bg-image img-diver tall-60">
             <!-- image -->
         </div>
-        <div class="col-6_sm-12">
+        <div class="col-6_sm-12 padded">
             <h3>Our Aims</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem nostrum voluptates ad obcaecati veritatis voluptatum eveniet aspernatur consectetur accusamus quis quaerat aliquid dolore dicta nemo expedita, commodi incidunt asperiores ab.</p>
+            <p> Voluptatem nostrum voluptates ad obcaecati veritatis voluptatum eveniet aspernatur consectetur accusamus quis quaerat aliquid dolore dicta nemo expedita, commodi incidunt asperiores ab. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, voluptates.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur assumenda deleniti aut quam similique esse blanditiis ea accusantium, veniam illum quod? Adipisci sint fugiat suscipit similique alias beatae error commodi.</p>
+            <p> Earum, ullam. Ratione temporibus voluptatum voluptatem sapiente exercitationem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque suscipit cupiditate minima in aut, quod obcaecati officia autem, ab laudantium nostrum cum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quo doloribus, modi saepe mollitia temporibus dolorum sed ad omnis sit sunt necessitatibus magnam iste repudiandae incidunt eveniet ex nesciunt suscipit.</p>
         </div>
     </section>
 
     <!------------ Quote Banner ------------>
-    <section>
-        <div>
-            <!-- image -->
-            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, necessitatibus.</h3>
+    <section class="grid-middle center padded bg-image img-underwater tall-50">
+        <div class="col-1">
+            <span class="quote-icon right">“</span>
+        </div>
+        <div class="col-10">
+            <p class="medium-text alternative-text semi-bold">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <p class="small-text">- author</p> <!-- may need to create and add a subtitle class to this and other similar sections -->   
+        </div>
+        <div class="col-1 left">
+            <span class="quote-icon">”</span>
         </div>
     </section>
     <!------------ Meet The Team ------------>
-    <section class="grid">
+    <section class="mini-gallery grid-spaceAround-middle center padded-tb">
         <div class="col-12">
             <h2>Meet the Team</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, quo.</p>
+        </div>
+        <div class="grid-middle-spaceBetween col-12 padded-t">
+            <div class="col-4 padded-t">
+                <img src="https://source.unsplash.com/iEEBWgY_6lA" alt="">
+                <h4>Name</h4>
+                <p>Position</p>
+            </div>
+            <div class="col-4 padded-t">
+                <img src="https://source.unsplash.com/IlkDfFGyndw" alt="">
+                <h4>Name</h4>
+                <p>Position</p>
+            </div>
+            <div class="col-4 padded-t">
+                <img src="https://source.unsplash.com/FAE8sT9HqrI" alt="">
+                <h4>Name</h4>
+                <p>Position</p>
+            </div>
         </div>
         <div class="grid-spaceAround col-12">
             <div class="col-3">
-                <!-- image -->
-                <h3>Name</h3>
+                <img src="https://source.unsplash.com/mNBMGx-xhVI" alt="">
+                <h4>Name</h4>
                 <p>Position</p>
             </div>
             <div class="col-3">
-                <!-- image -->
-                <h3>Name</h3>
+                <img src="https://source.unsplash.com/WNoLnJo7tS8" alt="">
+                <h4>Name</h4>
                 <p>Position</p>
             </div>
             <div class="col-3">
-                <!-- image -->
-                <h3>Name</h3>
-                <p>Position</p>
-            </div>
-        </div>
-        <div class="grid-spaceAround col-12">
-            <div class="col-3">
-                <!-- image -->
-                <h3>Name</h3>
-                <p>Position</p>
-            </div>
-            <div class="col-3">
-                <!-- image -->
-                <h3>Name</h3>
-                <p>Position</p>
-            </div>
-            <div class="col-3">
-                <!-- image -->
-                <h3>Name</h3>
+                <img src="https://source.unsplash.com/FzavNq-l3t0" alt="">
+                <h4>Name</h4>
                 <p>Position</p>
             </div>
         </div>
     </section>
-    <!------------ Footer ------------>
+        <!------------ Footer ------------>
     <footer class="grid bg-dark">
         <!-- logo and text column -->
         <div class="col-5_sm-12 padded">
-            <h2 class="logo">ReesSearch Community</h2>
+            <h2 class="logo">ReefSearch Community</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, quos?</p>
         </div>
        <div class="col-1"></div>

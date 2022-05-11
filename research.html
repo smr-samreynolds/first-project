@@ -8,64 +8,90 @@
     <!-- Gridlex -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
     <!-- Google Fonts -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:ital,wght@0,200;0,400;0,600;0,800;1,200;1,400;1,600;1,800&display=swap" rel="stylesheet">
     <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- my style sheet -->
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <!------------ Header - Page Navigation ------------>
-    <section class="header-nav grid-middle-spaceBetween padded-05">
-        <h2 class="col-4 logo">
-            <a href="/index.html" class="header-nav" >
-            ReefSearch Community</a>
-        </h2>
-        <nav class="col-8 right">
+     <!------------ Header - Page Navigation ------------>
+    <header class="header-nav bg-image img-oceanSurface grid-top center tall-60 padded-sm">
+        <div class="col-12-top grid">
+          <div class="col-4 left">
+            <a href="/index.html" class=logo>
+              <h2>ReefSearch</h2>
+            </a>
+          </div>
+          <nav class="col-8-middle right light-text">
             <a href="/who-we-are.html" class="col-2">Who we are</a>
             <a href="/what-we-do.html" class="col-2">What we do</a>   
             <a href="/where-we-work.html" class="col-2">Where we work</a>
             <a href="/contact.html" class="col-2">Contact Us</a>   
-        </nav>
-    </section>
-    <!------------ Header Banner ------------->
-    <section class="bg-image">
-        <h1>Coral Reef Conservation</h1>
-        <h2>Community Led Conservation and Stewardship</h2>
-    </section>
-    <!-- Horizontal Scroll Section -->
-    <section>
-        <h2>Our Research Locations</h2>
-        <div class="grid horizontal-scroll">
+          </nav>
+        </div>
+        <div class=col-12>
+          <h3 class="dark-text">Impact-based<span class="featured-text"> Research</span></h3>
+          <h1>Developing projects to drive change</h1>
+        </div>
+      </header>
+      <!-- Horizontal Scroll Section -->
+    <section class="padded">
+        <h2 class="center margin-b">Research Projects</h2>
+        <div class="grid horizontal-scroll center">
             <!-- Card 1 -->
-            <div class="col-8">
-                <div class="card bg-image">
-                    <h3>Coral Reef Restoration</h3>
+            <div class="col-3 card padded-1">
+                <div>
+                    <img src="https://source.unsplash.com/sw3TPBDe1nU" alt="">
+                </div>
+                <div>
+                    <h3>Coral Reef Restoration</h3>                  
                 </div>
             </div>
              <!-- Card 2 -->
-             <div class="col-8">
-                <div class="card bg-image">
+             <div class="col-3 card padded-1">
+                <div>
+                    <img src="https://source.unsplash.com/yXY16jjngpY" alt="">
+                </div>
+                <div>
                     <h3>Grouper Fisheries</h3>
                 </div>
             </div>
             <!-- Card 3 -->
-            <div class="col-8">
-                <div class="card bg-image">
-                    <h3>Manta Ray Ecology</h3>
+            <div class="col-3 card padded-1">
+                <div>
+                    <img src="https://source.unsplash.com/yi3ZcpON5m8" alt="">
+                </div>
+                <div>
+                    <h3>Dolphin ID</h3>
                 </div>
             </div>
             <!-- Card 4 -->
-            <div class="col-8">
-                <div class="card bg-image">
-                    <h3>Sea Turtle Rehabilitation</h3>
+            <div class="col-3 card padded-1">
+                <div>
+                    <img src="https://source.unsplash.com/F54xLcv9wQ0" alt="">
+                </div>
+                <div>
+                    <h3>Manta Ray Ecology</h3>
                 </div>
             </div>
-        </div>
+            <!-- Card 5 -->
+            <div class="col-3 card padded-1">
+                <div>
+                    <img src="https://source.unsplash.com/a7T0PQol-6E" alt="">
+                </div>
+                <div>
+                    <h3>Whale Shark Population</h3>
+                </div>
+            </div>
+        </section>
+
     <!------------ Image/Text Section ------------>
-    <section class="grid">
-        <div class="grid col-6">
-            <div class="col-12">
+    <section class="grid bg-dark center">
+        <div class="grid col-6 padded  bg-image img-reef">
+            <div class="col-12 padded-tb">
                 <h3>4</h3>
                 <p>research projects</p>
             </div>
@@ -78,45 +104,46 @@
                 <p>target species</p>
             </div>
         </div>
-        <div class="col-6">
-            <!-- Image -->
+        <div class="col-6 left padded">
+            <h2>Research</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi excepturi, harum at nihil dolorem consequatur quo laudantium ad consectetur a nesciunt ducimus labore, voluptate architecto laboriosam expedita tempore, iusto aspernatur molestiae dolorum corporis aperiam quidem magni optio. Doloremque ea eius sequi nesciunt ex illo iure sunt omnis veniam unde deserunt eveniet, corporis exercitationem excepturi? Ratione eius eveniet esse quo ullam non, tempore voluptatem provident quaerat quas nam nisi cupiditate atque impedit perspiciatis minima tenetur error!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, in! Sapiente quo cupiditate ex at, eum corrupti obcaecati laborum unde mollitia repellat veritatis explicabo adipisci amet beatae odit ut dolores quidem nulla exercitationem iusto rem.</p>
         </div>
     </section>
-    <!------------ image banner ------------>
-    <section>
-        <div>
-            <!-- DON'T FORGET TO ADD AN IMAGE HERE -->
-            <img src="" alt="">
-        </div>
-    </section>
-    <!-- Video Section -->
+    
+    <!------------ Video Section ------------>
     <section class="grid">
-        <div class="col-7">
-            <!-- video -->
-        </div>
-        <div class="col-5">
+        <div class="col-6 padded">
             <h3>TITLE</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti facere quibusdam veniam hic architecto neque, praesentium non. Sed sint esse, modi, ab non tempora repellat distinctio aperiam laboriosam, autem nisi!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur fugit sequi, quisquam perferendis quasi vero dolor, recusandae voluptatem possimus nobis magnam. Maiores fugiat et ullam aspernatur magni error voluptatum id neque repellendus eos. Aliquam, repellendus modi. Esse omnis illo fuga, natus iste recusandae harum amet suscipit aliquid sequi voluptatum aspernatur? Aut, quidem qui ratione sequi aliquam natus id, dolores in vitae nihil facere quas hic porro eos, repudiandae numquam et fugit voluptates voluptatum ullam voluptatem.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus quod totam obcaecati quam laboriosam veniam tempore nobis. Quis sapiente molestias fugit ipsum in, possimus nihil magni, porro asperiores, quo eveniet corrupti reprehenderit eaque nisi magnam? Exercitationem ipsam laborum eligendi. Amet ullam natus vero officiis eius.</p>
+        </div>
+        <div class="col-6 padded">
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/259281867?h=4b32aef37c" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
         </div>
     </section>
-    <!-- Mini Projects Section -->
-    <section class="grid-spaceAround-middle">
-        <div class="col-4_sm-12 bg-image">
-            <a href="/research.html">
-                <h3>Conservation</h3>
-            </a>
-        </div>
-        <div class="col-4_sm-12 bg-image">
-            <a href="/education-and-outreach.html">
-                <h3>Education <br>and <br>Outreach</h3>
-            </a>
-        </div>
+     <!------------ image banner ------------>
+     <section class="padded bg-image img-reef2 opacity-50 tall-40">
+        <div></div>
     </section>
-    <!------------ Footer ------------>
+    <!------------ Projects Section ------------>
+    <section class="grid-spaceAround-middle padded projects">
+        <h2 class="col-12 center padded-b">Our Projects</h2>
+        <a href="/conservation.html" class="col-3_sm-12 bg-image img-coralNursery square">
+             <h3 class="center">Conservation</h3>
+        </a>
+        <a href="/education-and-outreach.html" class="col-3_sm-12 bg-image img-fishers square-2">
+            <div>
+                <h3 class="center">Education <br>and <br>Outreach</h3>
+            </div>
+        </a>
+    </section>
+    <!------------ FOOTER ------------>
     <footer class="grid bg-dark">
         <!-- logo and text column -->
         <div class="col-5_sm-12 padded">
-            <h2 class="logo">ReesSearch Community</h2>
+            <h2 class="logo">ReefSearch Community</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, quos?</p>
         </div>
        <div class="col-1"></div>

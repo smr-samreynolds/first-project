@@ -8,55 +8,57 @@
     <!-- Gridlex -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
     <!-- Google Fonts -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:ital,wght@0,200;0,400;0,600;0,800;1,200;1,400;1,600;1,800&display=swap" rel="stylesheet">
     <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- my style sheet -->
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-<!------------ Header - Page Navigation ------------>
-    <section class="header-nav grid-middle-spaceBetween padded-05">
-        <h2 class="col-4 logo">
-            <a href="/index.html" class="header-nav" >
-        ReefSearch Community</a>
-        </h2>
-        <nav class="col-8 right">
-            <a href="/who-we-are.html" class="col-2">Who we are</a>
-            <a href="/what-we-do.html" class="col-2">What we do</a>   
-            <a href="/where-we-work.html" class="col-2">Where we work</a>
-            <a href="/contact.html" class="col-2">Contact Us</a>   
-        </nav>
-    </section>
-    <!------------ Header Banner ------------>
-    <section class="bg-image">
-        <h1>What We Do</h1>
-        <h2>Discover the locations we work in</h2>
-    </section>
+<!------------ Header - Banner ------------>
+<header class="header-nav bg-image img-oceanSurface grid-top center tall-60 padded-sm">
+    <div class="col-12-top grid">
+      <div class="col-4 left">
+        <a href="/index.html" class=logo>
+          <h2>ReefSearch</h2>
+        </a>
+      </div>
+      <nav class="col-8-middle right light-text">
+        <a href="/who-we-are.html" class="col-2">Who we are</a>
+        <a href="/what-we-do.html" class="col-2">What we do</a>   
+        <a href="/where-we-work.html" class="col-2">Where we work</a>
+        <a href="/contact.html" class="col-2">Contact Us</a>   
+      </nav>
+    </div>
+    <div class=col-12>
+      <h3 class="dark-text">What we <span class="featured-text">do!</span></h3>
+      <h1>Conservation | Research | Education</h1>
+    </div>
+  </header>
     <!------------ Text Section ------------>
-    <section class="grid">
+    <section class="text-block padded bg-dark center">
         <h2>The Three Pillars of ReefSearch Community</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eveniet recusandae quos sint, magnam nulla quaerat maxime sed accusantium, sit, iusto inventore? Rem, suscipit quia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eveniet recusandae quos sint, magnam nulla quaerat maxime sed accusantium, sit, iusto inventore? Asperiores, blanditiis vero cumque numquam culpa qui quod reiciendis veniam ex voluptatibus reprehenderit odio aperiam temporibus modi sint optio voluptatum laboriosam amet exercitationem necessitatibus, aliquam dolores Rem, suscipit quia.</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, blanditiis vero cumque numquam culpa qui quod reiciendis veniam ex voluptatibus reprehenderit odio aperiam temporibus modi sint optio voluptatum laboriosam amet exercitationem necessitatibus, aliquam dolores. Consectetur eveniet repellat nemo ratione. Aliquid labore commodi sit consectetur ipsum!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis explicabo asperiores possimus temporibus voluptates laudantium itaque officia nam, id aperiam!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis explicabo asperiores possimus temporibus voluptates laudantium itaque officia nam, id aperiam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, rem perspiciatis quam et voluptas consectetur ad doloremque optio odit possimus sed nostrum dolorum ipsum odio omnis harum, voluptatem reiciendis iure ea illum numquam animi. Quod voluptates doloribus dolor dolorem incidunt.</p>
     </section>
     <!------------ Projects Section ------------>
-    <section class="grid-spaceAround">
-        <div class="col-3_sm-12 bg-image">
-            <a href="/conservation.html">
-                <h3>Conservation</h3>
-            </a>
-        </div>
-        <div class="col-3_sm-12 bg-image">
-            <a href="/research.html">
-                <h3>Research</h3>
-            </a>
-        </div>
-        <div class="col-3_sm-12 bg-image">
-            <a href="/education-and-outreach.html">
-                <h3>Education <br>and <br>Outreach</h3>
-            </a>
-        </div>
+    <section class="grid-spaceAround-middle padded projects">
+        <a href="/conservation.html" class="col-3_sm-12 bg-image img-coralNursery square">
+             <h3 class="center">Conservation</h3>
+        </a>
+        <a href="/research.html" class="col-3_sm-12 bg-image img-bleached square">
+            <div>
+                <h3 class="center">Research</h3>
+            </div>
+        </a>
+        <a href="/education-and-outreach.html" class="col-3_sm-12 bg-image img-fishers square-2">
+            <div>
+                <h3 class="center">Education <br>and <br>Outreach</h3>
+            </div>
+        </a>
     </section>
     <!------------ Footer ------------>
     <footer class="grid bg-dark">
